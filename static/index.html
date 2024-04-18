@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Recipes!</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Hello from the front end!</h1>
+    <div id="root">
+      <h1>Recipes!</h1>
+      <button class="importRecipes">Import Recipes</button>
+      <button class="deleteRecipes">Kill All Recipes</button>
+      <form id="addForm">
+        <input
+          type="text"
+          name="title"
+          placeholder="Recipe Title"
+          value="Toast"
+        />
+        <input type="text" name="image" placeholder="Image" value="toast.png" />
+        <textarea name="description" value="description">Yummy!</textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="recipes"></div>
+    </div>
+
     <script src="/js/scripts.js"></script>
   </body>
 </html>
