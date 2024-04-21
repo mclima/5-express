@@ -52,3 +52,13 @@ button {
   color: #007eb6;
   cursor: pointer;
 }
+.button-container {
+  display: flex;
+}
+.message {
+  color: #007eb6;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: italic;
+  font-weight: bold;
+}

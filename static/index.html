@@ -12,6 +12,16 @@
       <h1>Recipes!</h1>
       <button class="importRecipes">Import Recipes</button>
       <button class="deleteRecipes">Kill All Recipes</button>
+
+      <form id="imageForm">
+        <input type="file" name="file" accept="image/png" />
+        <input type="text" placeholder="File name" name="filename" />
+        <div class="button-container">
+          <button type="submit">Upload</button>
+          <p class="message"></p>
+        </div>
+      </form>
+
       <form id="addForm">
         <input
           type="text"
@@ -19,8 +29,23 @@
           placeholder="Recipe Title"
           value="Toast"
         />
+        <input
+          type="datetime-local"
+          id="start"
+          name="created"
+          min="2018-01-01"
+          max="2024-12-31"
+        />
         <input type="text" name="image" placeholder="Image" value="toast.png" />
         <textarea name="description" value="description">Yummy!</textarea>
+        <input
+          type="text"
+          name="ingredients"
+          placeholder="Ingredients"
+          value="bread, butter"
+        />
+        <div id="preparationSteps"></div>
+        <button id="addStep" type="button">Add Step</button>
         <button type="submit">Submit</button>
       </form>
 
